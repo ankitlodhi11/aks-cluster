@@ -5,6 +5,7 @@ terraform {
       version = "3.47"
     }
   }
+  #code has been added to configure the backend for storing the Terraform state file in Azure Blob Storage. This is important for collaboration and state management in a team environment.
   backend "azurerm" {
     resource_group_name  = "rg-statefile"
     storage_account_name = "stagefile123321"
