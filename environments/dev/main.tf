@@ -3,6 +3,8 @@ module "resource_groups" {
   resource_groups = var.infra_config.resource_groups
 }
 
+
+
 module "acr" {
   source = "../../modules/acr"
   container_registries = { 
@@ -28,3 +30,5 @@ module "aks" {
     }
   }
 }
+
+
